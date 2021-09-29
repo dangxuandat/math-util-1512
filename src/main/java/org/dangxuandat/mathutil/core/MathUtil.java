@@ -21,7 +21,7 @@ public class MathUtil {
             return 1;
         
         long product = 1;  
-        
+        //hehehehe
         for (int i = 2; i <= n; i++) 
             product *= i;
         
