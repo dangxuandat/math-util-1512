@@ -34,3 +34,8 @@ jobs:
       with:
        name: Package
        path: staging
+    - name: Make hyperlink to jar-war file # Tạo hyperlink để download build 
+      uses: actions/upload-artifact@v1
+      with:
+          name: 1.0-SNAPSHOT.jar # Bản build được đánh version 1.0-SNAPSHOT
+          path: staging
