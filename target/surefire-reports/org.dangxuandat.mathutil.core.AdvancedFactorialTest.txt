@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.dangxuandat.mathutil.core.AdvancedFactorialTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.089 s <<< FAILURE! - in org.dangxuandat.mathutil.core.AdvancedFactorialTest
-org.dangxuandat.mathutil.core.AdvancedFactorialTest.checkFactorialGivenRightArgumentReturnsWell[6]  Time elapsed: 0.008 s  <<< FAILURE!
-java.lang.AssertionError: expected:<820> but was:<720>
-	at org.dangxuandat.mathutil.core.AdvancedFactorialTest.checkFactorialGivenRightArgumentReturnsWell(AdvancedFactorialTest.java:66)
-
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 s - in org.dangxuandat.mathutil.core.AdvancedFactorialTest
