@@ -17,9 +17,9 @@ public class Main {
     public static void main(String[] args) {
         
         //test = tay
-        System.out.println("0! = 1? " + MathUtil.getFactorial(0));
-        System.out.println("1! = 1? " + MathUtil.getFactorial(1));
-        System.out.println("5! = 120? " + MathUtil.getFactorial(5));
+        System.out.println("0! = 1? " + MathUtil.getFatorial(1));
+        System.out.println("1! = 1? " + MathUtil.getFatorial(5));
+        System.out.println("5! = 120? " + MathUtil.getFatorial(10));
     }
 }
 
