@@ -14,12 +14,12 @@ public class FactorialTest {
     @Test  //biến 1 hàm đi kèm cái Annotation này thành hàm main()
     public void checkFactorialGivenRightArgumentReturnsWell() {
         long expected = 120; //tui kì vọng 120 trả về
-        long actual = MathUtil.getFactorial(5); //nếu tui tính 5!
+        long actual = MathUtil.getFatorial(5); //nếu tui tính 5!
         
         Assert.assertEquals(expected, actual);
         
-        Assert.assertEquals(720, MathUtil.getFactorial(6));
-        Assert.assertEquals(1, MathUtil.getFactorial(0));
+        Assert.assertEquals(720, MathUtil.getFatorial(6));
+        Assert.assertEquals(1, MathUtil.getFatorial(0));
     }
     
     //bắt xem, test xem hàm có ném về ngoại lệ như kì vọng hay ko
@@ -31,7 +31,7 @@ public class FactorialTest {
     //JUnit 4 coi ngoại lệ ko là giá trị, ko assertEquals(ngoại lệ, actual)
     @Test(expected = IllegalArgumentException.class)
     public void checkFactorialGivenWrongArgumentThrowsException() {
-        MathUtil.getFactorial(-25); //phải ném ngoại lệ mới là đúng
+        MathUtil.getFatorial(-25); //phải ném ngoại lệ mới là đúng
     }
     
 }

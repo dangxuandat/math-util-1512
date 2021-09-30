@@ -9,7 +9,8 @@ package org.dangxuandat.mathutil.core;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.dangxuandat.mathutil.core.MathUtil.getFactorial;
+
+import static org.dangxuandat.mathutil.core.MathUtil.getFatorial;
 import static org.junit.Assert.*;
 
 import org.junit.runner.RunWith;
@@ -64,6 +65,6 @@ public class AdvancedFactorialTest {
     @Test
     public void checkFactorialGivenRightArgumentReturnsWell() {
 
-        assertEquals(expected, getFactorial(n));
+        assertEquals(expected, getFatorial(n));
     }
 }
