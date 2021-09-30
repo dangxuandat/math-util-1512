@@ -12,21 +12,21 @@ public class MathUtil {
     //                               Test First Development
     //ta nghĩ về test, kịch bản test, bộ dữ liệu test trước khi code
     
-    public static long getFactorial(int n) {
-        
-        if (n < 0 || n > 20)
-            throw new IllegalArgumentException("n must be between 0..20");
-        
-        if (n == 0 || n == 1)
-            return 1;
-        
-        long product = 1;  
-        //hehehehe
-        for (int i = 2; i <= n; i++) 
-            product *= i;
-        
-        return product;
-    }
+//    public static long getFactorial(int n) {
+//
+//        if (n < 0 || n > 20)
+//            throw new IllegalArgumentException("n must be between 0..20");
+//
+//        if (n == 0 || n == 1)
+//            return 1;
+//
+//        long product = 1;
+//        //hehehehe
+//        for (int i = 2; i <= n; i++)
+//            product *= i;
+//
+//        return product;
+//    }
            
     // y = f(x) = x^2
     //     f(5) -> 25
@@ -34,5 +34,9 @@ public class MathUtil {
     //sure, getF(5) -> 120
     //      getF(6) -> 720
     
-    
+    public static long getFatorial(int n){
+        if(n <0 || n > 20) throw new IllegalArgumentException("Number must be between 0 and 20");
+        if( n == 0 || n == 1) return 1;
+        return n * getFatorial(n-1);
+    }
 }

@@ -63,6 +63,7 @@ public class AdvancedFactorialTest {
 
     @Test
     public void checkFactorialGivenRightArgumentReturnsWell() {
+
         assertEquals(expected, getFactorial(n));
     }
 }
